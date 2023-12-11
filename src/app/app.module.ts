@@ -11,14 +11,13 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZWFYHxlCCF6E6OqRwqiY75HzwtUxUfXQ",
-  authDomain: "pretocheiroso-b765c.firebaseapp.com",
-  projectId: "pretocheiroso-b765c",
-  storageBucket: "pretocheiroso-b765c.appspot.com",
-  messagingSenderId: "538476384337",
-  appId: "1:538476384337:web:ce5e747382d659a81e6870"
+  apiKey: "AIzaSyCIxgIl7d8bB4RqXbUrnN3P7DwhAnh7AEY",
+  authDomain: "pretocheiroso-6ad96.firebaseapp.com",
+  projectId: "pretocheiroso-6ad96",
+  storageBucket: "pretocheiroso-6ad96.appspot.com",
+  messagingSenderId: "894290509413",
+  appId: "1:894290509413:web:1368ef642f071a4393d08c"
 };
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
@@ -26,7 +25,7 @@ const firebaseConfig = {
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
-    provideFirebaseApp(() => initializeApp({"projectId":"pretocheiroso-b765c","appId":"1:538476384337:web:ce5e747382d659a81e6870","storageBucket":"pretocheiroso-b765c.appspot.com","apiKey":"AIzaSyAZWFYHxlCCF6E6OqRwqiY75HzwtUxUfXQ","authDomain":"pretocheiroso-b765c.firebaseapp.com","messagingSenderId":"538476384337"}))
+    provideFirebaseApp(() => initializeApp(firebaseConfig))
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
